@@ -6,7 +6,10 @@ const btnSend = document.querySelector('#btnSend');
 
 btnSend.addEventListener('click', async () => {
     // Check if `Notifications` is supported.
-    if ('Notification' in window) {
+    const notificationSupported = 'Notification' in window;
+    console.log({notificationSupported})
+
+    if (!notificationSupported) {
         alert('Notifications is not supported!');
         return;
     }
