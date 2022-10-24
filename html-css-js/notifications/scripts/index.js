@@ -7,17 +7,19 @@ const btnSend = document.querySelector('#btnSend');
 btnSend.addEventListener('click', async () => {
     // Check if `Notifications` is supported.
     const notificationSupported = 'Notification' in window;
-    console.log({notificationSupported})
+    console.log({ notificationSupported });
 
-    if (!notificationSupported) {
-        alert('Notifications is not supported!');
-        return;
-    }
+    // if (!notificationSupported) {
+    //     alert('Notifications is not supported!');
+    //     return;
+    // }
 
-    if (Notification.permission != 'granted') {
-        console.log('Denied!');
-        return;
-    }
+    console.log('Premission', Notification.permission);
+
+    // if (Notification.permission != 'granted') {
+    //     console.log('Denied!');
+    //     return;
+    // }
 
     console.log('Granted!');
 
