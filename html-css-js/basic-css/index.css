@@ -1,0 +1,222 @@
+/* This is how to get rid of margins and paddings on everything */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    line-height: 1.5em;
+
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: greenyellow;
+}
+
+a:visited {
+    color: lightsalmon;
+}
+
+.container {
+    width: 80%;
+
+    /* Set margin to auto to center the container on the page (width)*/
+    margin: auto;
+
+    border-width: 0.5em;
+    border-color: greenyellow;
+    border-style: solid;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: #333333;
+    color: #ffffff;
+
+    border-right: 0.5em blueviolet solid; /* size, color, style */
+    border-radius: 0.5em 1.25em 2em 4em; /* top-left (+ bottom right), top-right (+ bottom left), bottom-right, bottom-left */
+
+    /* Margin: space between elements. */
+    margin: 1em 2em 3em 4em; /*top (+ bottom), right (+ left), bottom, left*/
+    margin: 0.5em; /* this overwrites the previous */
+
+    /* Padding: space between element and border. */
+    padding: 4em 3em 2em 1em; /*top (+ bottom), right (+ left), bottom, left*/
+}
+
+.box-1 h1 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-style: italic;
+
+    text-decoration: underline;
+    text-transform: lowercase;
+
+    letter-spacing: 0.25em;
+
+    margin-bottom: 1em;
+}
+
+.box-2 {
+    border: 0.3em dotted purple;
+    padding: 1.5em;
+    margin: 1em;
+}
+
+.categories {
+    border: 0.2em goldenrod solid;
+    border-radius: 1em;
+}
+
+.categories h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.categories ul {
+    padding: 2em;
+    list-style-type: square;
+    list-style-type: upper-roman;
+}
+
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: 1px brown dotted;
+    /* list-style-image: url("smiley.png"); */
+}
+
+/* Form */
+.main-form {
+    padding: 20px;
+}
+
+.main-form .form-group {
+    padding-bottom: 20px;
+}
+
+.main-form label {
+    display: block;
+}
+
+/*.main-form input[type="text"]*/
+.main-form input,
+.main-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: darkcyan;
+    color: yellow;
+    padding: 10px 15px;
+    border: none;
+}
+
+.main-form button:hover {
+    background-color: yellow;
+    color: darkcyan;
+}
+/* end-form */
+
+/* blocks */
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px gray solid;
+    box-sizing: border-box; /* change this value to 'content-box' to see what border-box does.*/
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#side-bar {
+    float: right;
+    width: 30%;
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Positioning */
+
+.p-box {
+    width: 600px;
+    height: 500px;
+    border: 1px black solid;
+
+    margin-top: 30px;
+
+    position: relative;
+
+    background-image: url('./background-1.jfif');
+    /* background-repeat: no-repeat; */
+    /* background-position: 100px 200px;
+    background-position: center center; */
+}
+
+.p-box h1 {
+    position: absolute; /* this sets the position relative to the page */
+    position: relative; /* this sets the position relative to it's container */
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    position: absolute; /* because '-p-box' has a position setting this 'absolute' value 
+                        takes effect within it's container.*/
+
+    bottom: 0px;
+    right: 50px;
+}
+
+/* This will keep the element in place even when scrolling the page.*/
+.fix-me {
+    position: fixed;
+    bottom: 0px;
+    bottom: 50%;
+    right: 0px;
+}
+
+/* Pseudo */
+.my-list li:nth-child(even) {
+    background-color: gray;
+}
+
+.my-list li:first-child {
+    background-color: red;
+}
+
+/* target the 5th element. This is not zero-based */
+.my-list li:nth-child(5) {
+    background-color: lightsalmon;
+}
+
+.my-list li:last-child {
+    background-color: goldenrod;
+}
