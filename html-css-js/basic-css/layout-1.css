@@ -79,9 +79,9 @@ body {
     padding: 20px;
     margin-top: 40px;
 
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
 }
 
 /* Apply these style when the width <= 600px */
