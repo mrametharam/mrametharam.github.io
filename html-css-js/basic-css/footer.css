@@ -1,0 +1,27 @@
+/* 
+References:
+===========
+- https://www.w3docs.com/snippets/css/how-to-make-a-div-element-extend-to-the-page-bottom-even-having-no-content.html
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+}
+
+div {
+    /* height: 100%; */
+    /* width: 80%; */
+    padding: 10px;
+    background-color: cadetblue;
+    margin-top: 30px;
+    /* position:absolute;
+    bottom: 0; */
+}
