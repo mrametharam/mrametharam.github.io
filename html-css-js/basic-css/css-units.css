@@ -1,0 +1,61 @@
+.box {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.topic {
+    background-color: lightcoral;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: white;
+}
+
+/* Percent vs Pixels */
+.fifty-percent {
+    width: 50%;
+}
+
+.one-hundred-pixels {
+    width: 100px;
+}
+
+.parent {
+    height: 75px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+/* Percent vs VW vs VH*/
+.fifty-vw {
+    width: 50vw;
+}
+
+.twenty-five-vh {
+    height: 20vh;
+}
+
+.parent-vwh {
+    height: 75px;
+    width: 100px;
+}
+
+/* rem vs em*/
+.one-rem {
+    font-size: 1rem;
+}
+.one-em {
+    font-size: 1em;
+}
+.two-rem {
+    font-size: 2rem;
+}
+.two-em {
+    font-size: 2em;
+}
+.parent-em {
+    font-size: 36px;
+}
