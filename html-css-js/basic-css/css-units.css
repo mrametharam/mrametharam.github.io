@@ -20,7 +20,7 @@ p {
 }
 
 .one-hundred-pixels {
-    width: 100px;
+    width: 300px;
 }
 
 .parent {
@@ -36,11 +36,6 @@ p {
 
 .twenty-five-vh {
     height: 20vh;
-}
-
-.parent-vwh {
-    height: 75px;
-    width: 100px;
 }
 
 /* rem vs em*/

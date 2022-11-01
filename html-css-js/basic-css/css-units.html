@@ -12,8 +12,14 @@
 </head>
 
 <body>
+    <a href="/index.html">Back to main</a>
+
     <div class="topic">
         <h1>Percent vs Pixels</h1>
+
+        <p>Percent is relative to its container, while pixel is fixed
+            relative to the page.</p>
+
         <div class="box fifty-percent">50%</div>
         <div class="box one-hundred-pixels">100px</div>
 
@@ -27,15 +33,20 @@
 
     <div class="topic">
         <h1>Percent vs VW vs VH</h1>
+
+        <p>VW and VH are the same as the percent, except that they are
+            always relative to the page and not their container.
+        </p>
+
         <div class="box fifty-percent">50%</div>
-        <div class="box fifty-vh">50vh</div>
+        <div class="box fifty-vw">50vw</div>
         <div class="box twenty-five-vh">25vh</div>
 
         <hr>
 
-        <div class="parent-vwh">
+        <div class="parent">
             <div class="box fifty-percent">50%</div>
-            <div class="box fifty-vh">50vh</div>
+            <div class="box fifty-vw">50vw</div>
             <div class="box twenty-five-vh">25vh</div>
         </div>
     </div>
