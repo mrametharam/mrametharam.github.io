@@ -1,0 +1,27 @@
+/* Reference: https://www.youtube.com/watch?v=NzjU1GmKosQ&list=PLZlA0Gpn_vH-M5Axdr4G8SUIGRV6aBUp- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+}
+
+.list-header {
+    background-color: black;
+    color: lime;
+
+    margin: 10px 0;
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+}
+
+.list-content {
+    margin: 0 30px;
+}
+
+/* Not all browsers support sticky! So do not use those browsers 8-) */
