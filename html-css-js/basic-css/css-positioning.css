@@ -1,0 +1,72 @@
+/*
+Positions:
+==========
+
+- static: the default behaviour.
+- relative (block): floats the element on top of other elements 
+            and go beyond the bounds of the parent. Setting
+            the left and top values are relative to its
+            current position.
+- absolute (inline): fixed position on the page. Setting the left and
+            top values are relative to the coordinates on the
+            whole page.
+            To make this relative to its parent, you just need
+            to set the parent's position to anything.
+- fixed (incline): similar to absolute but is relative to the screen.
+            If you scroll the page, the element will stay floating in
+            that position.
+- sticky: Used in conjunction with the 'top' property. This will cause
+            the element to stick to that position when it is reached
+            allowing everything below it to scroll pass the top of the
+            page. This is relative to its parent container. When the
+            parent container scrolls off the page, this element will
+            go with it.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+    background-color: cadetblue;
+}
+
+.parent {
+    background-color: blue;
+    color: white;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+.child {
+    padding: 10px;
+}
+
+.child-one {
+    background-color: green;
+
+    /* position: relative; */
+    /* position: absolute; */
+
+    /* position: fixed;
+    bottom: 0px;
+    right: 0px; */
+
+    position: sticky;
+    top: 0;
+}
+
+.child-two {
+    background-color: orangered;
+}
+
+.child-three {
+    background-color: palevioletred;
+}
