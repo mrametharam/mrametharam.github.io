@@ -57,10 +57,14 @@
     left: 0;
     bottom: 0;
     right: 0;
-    pointer-events: none;   /* This allows the background buttons and text to be clicked. */
+    pointer-events: none; /* This allows the background buttons and text to be clicked. */
 }
 
 #overlay.active {
     opacity: 1;
-    pointer-events: all;    /* prevents background buttons and text from getting clicked */
+    pointer-events: all; /* prevents background buttons and text from getting clicked */
+}
+
+.blur {
+    filter: blur(5px);
 }
